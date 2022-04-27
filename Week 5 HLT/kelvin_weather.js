@@ -12,7 +12,8 @@ let fahrenheit = celsius*(9/5)+32.5;
 console.log(fahrenheit);
 
 //.floor() method applied to fahrenheit to round down fahrenheit to integer 
-Math.floor(fahrenheit);
+
+fahrenheit = Math.floor (fahrenheit);
 
 console.log(fahrenheit);
 
