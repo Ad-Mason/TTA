@@ -7,16 +7,14 @@ let celsius = kelvin - 273;
 console.log(celsius)
 
 //creating new var to show todays temp in Fahrenheit calculated from value of celcius
-let fahrenheit = celsius*(9/5)+32.5;
+let fahrenheit = celsius*(9/5)+32;
 
-console.log(fahrenheit);
 
 //.floor() method applied to fahrenheit to round down fahrenheit to integer 
-
 fahrenheit = Math.floor (fahrenheit);
 
-console.log(fahrenheit);
 
+//logging the temp in Fahrenheit using string interpolation and the fahrenheit var
 console.log('The temperature is ${fahrenheit} degrees Fahrenheit.')
 
 
