@@ -7,7 +7,7 @@ let celsius = kelvin - 273;
 
 
 //creating new var to show todays temp in Fahrenheit calculated from value of celcius
-let fahrenheit = Celsius*(9/5)+32;
+let fahrenheit = celsius*(9/5)+32;
 
 
 //.floor() method applied to fahrenheit to round down fahrenheit to integer 
