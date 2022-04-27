@@ -7,7 +7,7 @@ let celsius = kelvin - 273;
 console.log(celsius)
 
 //creating new var to show todays temp in Fahrenheit calculated from value of celcius
-let fahrenheit = celsius*(9/5)+32;
+let fahrenheit = celsius*(9/5)+32.5;
 
 console.log(fahrenheit);
 
