@@ -15,7 +15,7 @@ fahrenheit = Math.floor (fahrenheit);
 
 
 //logging the temp in Fahrenheit using string interpolation and the fahrenheit var
-console.log('The temperature is ${fahrenheit} degrees Fahrenheit.')
+console.log('The temperature is ${fahrenheit}');
 
 
 
