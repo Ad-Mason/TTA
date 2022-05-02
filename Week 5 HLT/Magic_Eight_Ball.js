@@ -1,5 +1,6 @@
 let userName ="Roobz"
 
+
 if (userName.length > 0) {
     console.log(`Hello, ${userName}!`);
 } else {
@@ -8,7 +9,10 @@ if (userName.length > 0) {
 
 let userQuestion ="Will England win the World Cup"
 
-if (userQuestion.length > 0 && userName.length > 0) {
+
+//display question with user name if entered or request a question with username if entered 
+
+if (userQuestion.length > 0 && userName.length > 0) { 
     console.log(`${userName} asks: ${userQuestion}?`);
 } else if (userQuestion.length > 0 && userName.length < 1) {
     console.log(`${userQuestion}?`);
@@ -18,15 +22,17 @@ if (userQuestion.length > 0 && userName.length > 0) {
        console.log("Please ask a question");
    } 
 
+
 let randomNumber = Math.floor(Math.random() * 7);
 
-console.log(randomNumber)
 
 let eightBall = ""
 
+//create eightball outputs
+
 switch (randomNumber) {
   case 0:
-    eightBall = 'It is certain'
+    eightBall = 'Most definitely'
     break;
   case 1:
     eightBall = 'It is decidedly so'
