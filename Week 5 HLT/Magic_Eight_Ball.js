@@ -23,7 +23,7 @@ if (userQuestion.length > 0 && userName.length > 0) {
    } 
 
 
-let randomNumber = Math.floor(Math.random() * 7);
+let randomNumber = Math.floor(Math.random() * 8);
 
 
 let eightBall = ""
