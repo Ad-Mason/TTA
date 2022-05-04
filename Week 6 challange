@@ -1,0 +1,29 @@
+(function loop(i) {
+  if (i < 5) {
+    console.log("Messsage");
+    loop(i + 1);
+  }
+}(0));
+
+
+let i = 0;
+
+while (i < 5) {
+  console.log("message");
+  i += 1;
+}
+
+
+function Features(name, hair, eyeColour, age) {
+  console.log(`The ${name} is ${age} years old and has ${hair} hair with ${eyeColour} eyes`);
+}
+
+Features("Queen", "grey", "blue", 95)
+
+
+
+var a;
+
+while (a != "stop") {
+  a = prompt("Enter stop to exit");
+}
