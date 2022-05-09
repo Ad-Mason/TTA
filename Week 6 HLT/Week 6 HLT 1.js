@@ -109,10 +109,10 @@ condition = "snowing"
     //Use goToWork value to display statement whether Kelvin should or shouldnn't go work
 
   if (goToWork && condition == "raining" && temperature > 20) {
-      console.log("Being warm and wet isn't the worst, Kelvin")
+      console.log("Being warm and wet isn't the worst, you can continue working on your new lab today, Kelvin")
   }
     else if (goToWork) {
-      console.log("It's safe to continue working on your new lab today, Kelvin")
+      console.log("You can continue working on your new lab today, Kelvin")
 
   } else if (temperature < 10){
       console.log("It's too cold to work effectively today, Kelvin")
