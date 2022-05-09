@@ -5,17 +5,17 @@ var goToWork
 
 // temperature = prompt("what is the temperature?")
 
-// condition = prompt("what is the weather condition?")
+// condition = prompt("what is the weather condition? ( either sunny, clowdy, raining, snowing or thunder")
 
-temperature = 9
+temperature = 21
 
-condition = "sunny"
+condition = "Sunny"
 
  //when temperature is over 10 the following condition will set the boolean value of goToWork
 
  if(temperature > 10)  {
 
-  switch (condition) {
+  switch (condition.toLowerCase()) {
      case "sunny" :
     goToWork = true
    break;
@@ -38,7 +38,7 @@ condition = "sunny"
 
     else if (temperature > 20){
 
-    switch (condition) {
+    switch (condition.toLowerCase()) {
       case "sunny" :
      goToWork = true
     break;
@@ -61,7 +61,7 @@ condition = "sunny"
   
     else if (temperature > 30){
       
-    switch (condition) {
+    switch (condition.toLowerCase()) {
       case "sunny" :
      goToWork = false
     break;
@@ -84,7 +84,7 @@ condition = "sunny"
 
     else if (temperature < 10){
       
-    switch (condition) {
+    switch (condition.toLowerCase()) {
       case "sunny" :
      goToWork = false
     break;
