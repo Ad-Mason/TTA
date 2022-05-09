@@ -43,12 +43,5 @@ case "^" : result = toThePowerOf (firstValue, secondValue);
 
 console.log(`${firstValue} ${operation} ${secondValue} = ${result}`)
 
-// let answer = prompt("Would you like to do another calculation?")
-
-// for (let answer = prompt("Would you like to do another calculation?");answer != "No";) {
-//     console.log(`${firstValue} ${operation} ${secondValue} = ${result}`)
-//     console.log(answer)
-// }
-
 
 
