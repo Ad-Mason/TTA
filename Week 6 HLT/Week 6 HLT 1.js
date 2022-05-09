@@ -15,7 +15,7 @@ condition = "sunny"
 
  if(temperature > 10)  {
 
-  switch (condition) {
+  switch (condition.toLowerCase) {
      case "sunny" :
     goToWork = true
    break;
@@ -38,7 +38,7 @@ condition = "sunny"
 
     else if (temperature > 20){
 
-    switch (condition) {
+    switch (condition.toLowerCase) {
       case "sunny" :
      goToWork = true
     break;
@@ -61,7 +61,7 @@ condition = "sunny"
   
     else if (temperature > 30){
       
-    switch (condition) {
+    switch (condition.toLowerCase) {
       case "sunny" :
      goToWork = false
     break;
@@ -84,7 +84,7 @@ condition = "sunny"
 
     else if (temperature < 10){
       
-    switch (condition) {
+    switch (condition.toLowerCase) {
       case "sunny" :
      goToWork = false
     break;
