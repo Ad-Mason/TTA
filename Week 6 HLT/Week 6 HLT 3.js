@@ -19,7 +19,7 @@ function division(firstValue, secondValue) {
     return firstValue / secondValue;
 }
 function toThePowerOf(firstValue, secondValue) { 
-    return firstValue ** secondValue;
+    return firstValue ^ secondValue;
 }
 
 
