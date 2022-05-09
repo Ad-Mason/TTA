@@ -1,17 +1,18 @@
 
+//create variables
+
 var temperature
 var condition
 var goToWork
 
-// temperature = prompt("what is the temperature?")
+//ask user to input tmeperature and weather condition
 
-// condition = prompt("what is the weather condition? ( either sunny, clowdy, raining, snowing or thunder")
+temperature = prompt("what is the current temperature?")
 
-temperature = 35
+condition = prompt("what is the current weather condition? (enter: sunny, clowdy, raining, snowing or thunder")
 
-condition = "raining"
 
-    //when temperature is over 30 and under 30 the following condition will set the boolean value of goToWork 
+  //when temperature is over 30 the following condition will set the boolean value of goToWork 
   
   if (temperature > 30){
       
@@ -34,9 +35,9 @@ condition = "raining"
   
     }
 
-    //when temperature is over 20 the following condition will set the boolean value of goToWork 
+  //when temperature is over 20 the following condition will set the boolean value of goToWork 
 
-    else if (temperature > 20){
+  else if (temperature > 20){
 
       switch (condition.toLowerCase()) {
         case "sunny" :
@@ -58,28 +59,28 @@ condition = "raining"
     }     
   
 
- //when temperature is 10 or above the following condition will set the boolean value of goToWork
+  //when temperature is 10 or above the following condition will set the boolean value of goToWork
 
   else if(temperature >= 10)  {
 
-  switch (condition.toLowerCase()) {
-     case "sunny" :
-    goToWork = true
-   break;
-     case "cloudy":
-    goToWork = true
-   break;
-     case "raining" :
-    goToWork = false
-   break;
-     case "snowing" :
-    goToWork = false
-   break;
-     case "thunder" :
-    goToWork = false
-   break;   }
+     switch (condition.toLowerCase()) {
+       case "sunny" :
+     goToWork = true
+     break;
+       case "cloudy":
+     goToWork = true
+     break;
+       case "raining" :
+     goToWork = false
+     break;
+       case "snowing" :
+     goToWork = false
+     break;
+       case "thunder" :
+      goToWork = false
+     break;   }
 
-  } 
+    } 
 
 
     //when temperature is under 10 the following condition will set the boolean value of goToWork 
