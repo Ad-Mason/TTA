@@ -7,9 +7,9 @@ var goToWork
 
 // condition = prompt("what is the weather condition? ( either sunny, clowdy, raining, snowing or thunder")
 
-temperature = 25
+temperature = 35
 
-condition = "snowing"
+condition = "raining"
 
     //when temperature is over 30 and under 30 the following condition will set the boolean value of goToWork 
   
@@ -117,13 +117,13 @@ condition = "snowing"
   } else if (temperature < 10){
       console.log("It's too cold to work effectively today, Kelvin")
 
-  } else if (condition = "snowing" && temperature > 20) {
+  } else if (condition == "snowing" && temperature > 20) {
       console.log("The weather is too wierd today, Kelvin")
 
   } else if (temperature > 30){
       console.log("It's too hot to work effectively today, Kelvin")
 
-  } else if (condition = "thunder" && temperature > 20) {
+  } else if (condition == "thunder" && temperature > 20) {
       console.log("It's not safe to work today, Kelvin")
 
   } 
