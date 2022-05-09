@@ -1,49 +1,46 @@
-// let firstValue = prompt("Enter a number")
-// let secondValue = prompt("Enter a second number")
-// let operation = prompt("Enter operator for calculation (+, -, *, /,^):");
-
-let firstValue = 5;
-let secondValue = 10;
-let operation = "^";
-
-function addition(firstValue, secondValue) { 
-    return firstValue += secondValue;
-}
-function subtraction(firstValue, secondValue) { 
-    return firstValue - secondValue;
-}
-function multiplication(firstValue, secondValue) { 
-    return firstValue * secondValue;
-}
-function division(firstValue, secondValue) { 
-    return firstValue / secondValue;
-}
-function toThePowerOf(firstValue, secondValue) { 
-    return firstValue ** secondValue;
-}
 
 
-let result
-
-switch (operation) {
-case "+" : result = addition(firstValue, secondValue);
-break;
-
-case "-" : result = subtraction(firstValue, secondValue);
-break;
-
-case "/" : result = division(firstValue, secondValue);
-break;
-
-case "*" : result = multiplication(firstValue, secondValue);
-break;
-
-case "^" : result = toThePowerOf (firstValue, secondValue);
-}
-
-console.log(`${firstValue} ${operation} ${secondValue} = ${result}`)
+//my fruits array 
+var fruits = ["Apple", "Orange", "Banana", "Pear", "Peach", "Strawberry", "Cherry", "Acai"]
 
 
+for (let fruit in fruits)  {
 
 
+    var vowels = 0
+    var consonants = 0
 
+    for (var i = 0; i < fruits[fruit].length; i++){
+       if (fruits[fruit][i].toLowerCase() == "a" || fruits[fruit][i].toLowerCase() == "e" || fruits[fruit][i].toLowerCase() == "i" || fruits[fruit][i].toLowerCase() == "o" || fruits[fruit][i].toLowerCase() == "u") {
+           vowels ++
+       } else {
+           consonants ++
+       }
+
+    }
+    if (vowels < 2 && (fruits[fruit][0].toLowerCase() =="a" || fruits[fruit][0].toLowerCase() == "e" || fruits[fruit][0].toLowerCase() == "i" || fruits[fruit][0].toLowerCase() == "o" || fruits[fruit][0].toLowerCase() == "u")) {
+        console.log(`An ${fruits[fruit]} has ${vowels} vowel and ${consonants} consonants`)
+    } 
+    
+    else if (consonants < 2 && (fruits[fruit][0].toLowerCase() =="a" || fruits[fruit][0].toLowerCase() == "e" || fruits[fruit][0].toLowerCase() == "i" || fruits[fruit][0].toLowerCase() == "o" || fruits[fruit][0].toLowerCase() == "u")) {
+        console.log(`An ${fruits[fruit]} has ${vowels} vowels and ${consonants} consonant`)
+    } 
+
+    else if (fruits[fruit][0].toLowerCase() =="a" || fruits[fruit][0].toLowerCase() == "e" || fruits[fruit][0].toLowerCase() == "i" || fruits[fruit][0].toLowerCase() == "o" || fruits[fruit][0].toLowerCase() == "u") {
+        console.log(`An ${fruits[fruit]} has ${vowels} vowels and ${consonants} consonants`)
+    } 
+    
+    else if (vowels < 2) {
+        console.log(`A ${fruits[fruit]} has ${vowels} vowel and ${consonants} consonants`)
+    } 
+    
+    else if (consonants < 2) {
+        console.log(`A ${fruits[fruit]} has ${vowels} vowels and ${consonants} consonant`)
+    }
+    else {
+        console.log(`A ${fruits[fruit]} has ${vowels} vowels and ${consonants} consonants`)
+    }
+} 
+ 
+ 
+ 
