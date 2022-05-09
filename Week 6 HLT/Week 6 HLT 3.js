@@ -1,8 +1,10 @@
-let firstValue = prompt()
-let secondValue = prompt()
-let operation = prompt()
+// let firstValue = prompt("Enter a number")
+// let secondValue = prompt("Enter a second number")
+// let operation = prompt("Enter operator to perform the calculation ( either +, -, * or / ): ");
 
-
+let firstValue = 1;
+let secondValue = 2;
+let operation = "^";
 
 function multiplication(firstValue, secondValue) { 
     return firstValue * secondValue;
@@ -20,21 +22,33 @@ function toThePowerOf(firstValue, secondValue) {
     return firstValue ^ secondValue;
 }
 
+
+let result
+
 switch (operation) {
-case "additon" : addition()
-
+case "+" : result = addition(firstValue, secondValue);
 break;
-case "subtraction" :subtraction()
 
+case "-" : result = subtraction(firstValue, secondValue);
 break;
-case "division" : division()
 
+case "/" : result = division(firstValue, secondValue);
 break;
-case "multiplication" : multiplication()
 
+case "*" : result = multiplication(firstValue, secondValue);
 break;
-case "toThePowerOf" : toThePowerOf ()
 
+case "^" : result = toThePowerOf (firstValue, secondValue);
 }
 
-console.log( `${firstValue} ${operation} ${secondValue} = ${result}` )
+console.log(`${firstValue} ${operation} ${secondValue} = ${result}`)
+
+// let answer = prompt("Would you like to do another calculation?")
+
+// for (let answer = prompt("Would you like to do another calculation?");answer != "No";) {
+//     console.log(`${firstValue} ${operation} ${secondValue} = ${result}`)
+//     console.log(answer)
+// }
+
+
+

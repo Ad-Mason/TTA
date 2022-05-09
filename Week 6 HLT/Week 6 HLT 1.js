@@ -107,7 +107,7 @@ condition = "sunny"
     //Use goToWork value to display statement whether Kelvin should or shouldnn't go work
 
   if (goToWork) {
-  console.log("Get to work Kelvin, you crazy bastard!")
+  console.log("Get to work Kelvin, you crazy bastard.")
   } else {
    console.log("Don't go to work Kelvin, it's not safe.")
   } 
