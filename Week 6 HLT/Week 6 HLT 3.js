@@ -1,6 +1,6 @@
 let firstValue = prompt("Enter a number")
 let secondValue = prompt("Enter a second number")
-let operation = prompt("Enter operator to perform the calculation (+, -, *, /,^): ");
+let operation = prompt("Enter operator for calculation (+, -, *, /,^):");
 
 // let firstValue = 1;
 // let secondValue = 2;
