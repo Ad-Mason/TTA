@@ -7,9 +7,9 @@ var goToWork
 
 //ask user to input tmeperature and weather condition
 
-temperature = prompt("what is the current temperature?")
+temperature = prompt("what is the current temperature?");
 
-condition = prompt("what is the current weather condition? (enter: sunny, clowdy, raining, snowing or thunder")
+condition = prompt("what is the current weather condition? (enter: sunny, clowdy, raining, snowing or thunder");
 
 
   //when temperature is over 30 the following condition will set the boolean value of goToWork 
