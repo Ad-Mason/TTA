@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>bringing it all together</title>
+    <script src="JavaScript/index.js"></script>
+  </head>
+  <body>
+    <h1>Bringing it all together</h1>
+    <p id="paragraph_1">
+      Change text color
+    </p><br><br>
+    <button type="submit" onclick="change_text()">Change text</button>
+
+    <p id="paragraph_2">
+      Change background color
+      </p><br><br>
+    <button type="submit" onclick="change_background_color()">Change background</button>
+      <br><br>
+    <p id="paragraph_3">
+      Change font
+      </p><br><br>
+    <button type="submit" onclick="change_font()">Change font</button>
+
+    <br><br>
+
+    <form onsubmit = Return submit_form()>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname">
+    <label for="email">Email</label>
+    <input type="text" id="email">
+
+
+    <p>Age Range:
+    </p>
+    <label for="radio_1">16-17</label>
+    <input type="radio" id="radio_1" name="collection_1" value="1">
+        <br><br>
+    <label for="radio_2">18-20</label>
+    <input type="radio" id="radio_2" name="collection_1" value="2">
+        <br><br>
+    <label for="radio_3">21-22</label>
+    <input type="radio" id="radio_3" name="collection_1" value="3">
+        <br><br>
+    <label for="radio_4">23+</label>
+    <input type="radio" id="radio_4" name="collection_1" value="4">
+
+    <br />
+    <br />
+    <br />
+
+
+    <input type="submit" value="Submit Form">
+
+    </form>
+
+
+  </body>
+</html>
