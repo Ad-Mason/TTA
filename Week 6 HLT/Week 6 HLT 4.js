@@ -37,24 +37,24 @@ let result
 //call the function according to the matching operator
 
 switch (operation) {
-case "+" : result = addition(firstValue, secondValue);
+case "+" : result = addition(firstValue, secondValue)
 break;
 
-case "-" : result = subtraction(firstValue, secondValue);
+case "-" : result = subtraction(firstValue, secondValue)
 break;
 
-case "/" : result = division(firstValue, secondValue);
+case "/" : result = division(firstValue, secondValue)
 break;
 
-case "*" : result = multiplication(firstValue, secondValue);
+case "*" : result = multiplication(firstValue, secondValue)
 break;
 
-case "^" : result = toThePowerOf (firstValue, secondValue);
+case "^" : result = toThePowerOf (firstValue, secondValue)
 }
 
 //log the calculation and result
 
-console.log(`${firstValue} ${operation} ${secondValue} = ${result}`)
+console.log(`${firstValue} ${operation} ${secondValue} = ${result}`);
 
 
 

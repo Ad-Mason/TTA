@@ -110,21 +110,21 @@ condition = prompt("what is the current weather condition? (enter: sunny, clowdy
     //Use goToWork value to display statement whether Kelvin should or shouldnn't go work
 
   if (goToWork && condition == "raining" && temperature > 20) {
-      console.log("Being warm and wet isn't the worst, you can continue working on your new lab today, Kelvin")
+      console.log("Being warm and wet isn't the worst, you can continue working on your new lab today, Kelvin");
   }
     else if (goToWork) {
-      console.log("You can continue working on your new lab today, Kelvin")
+      console.log("You can continue working on your new lab today, Kelvin");
 
   } else if (temperature < 10){
-      console.log("It's too cold to work effectively today, Kelvin")
+      console.log("It's too cold to work effectively today, Kelvin");
 
   } else if (condition == "snowing" && temperature > 20) {
-      console.log("The weather is too wierd today, Kelvin")
+      console.log("The weather is too wierd today, Kelvin");
 
   } else if (temperature > 30){
-      console.log("It's too hot to work effectively today, Kelvin")
+      console.log("It's too hot to work effectively today, Kelvin");
 
   } else if (condition == "thunder" && temperature > 20) {
-      console.log("It's not safe to work today, Kelvin")
+      console.log("It's not safe to work today, Kelvin");
 
   } 
