@@ -14,9 +14,10 @@ temperature = prompt("What is the current temperature?");
 
 condition = prompt("What is the current weather condition? Please enter either sunny, cloudy, raining, snowing or thunder");
 
-if (condition.toLowerCase === "sunny" || "raining" || "snowing" || "thunder") {
+if (condition.toLowerCase() !== "sunny" || condition.toLowerCase() !== "cloudy" || condition.toLowerCase() !== "raining" || condition.toLowerCase() !== "snowing" || condition.toLowerCase() !== "thunder") {
   condition = prompt("Sorry that weather condition is not recognised, please enter either sunny, cloudy, raining, snowing or thunder")
 }
+
 
   //when temperature is over 30 the following condition will set the boolean value of goToWork 
   
@@ -78,7 +79,8 @@ if (temperature > 30){
 
     else if (temperature < 10){
 
-     goToWork = false
+     goToWork = false;
+
      }
 
   
