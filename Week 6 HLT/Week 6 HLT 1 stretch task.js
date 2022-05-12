@@ -4,20 +4,23 @@
 var temperature
 var condition
 var goToWork
+var continuousAnalysis = "true"
+
+do {   (function()  {
 
 //ask user to input tmeperature and weather condition
 
-temperature = prompt("what is the current temperature?");
+temperature = prompt("What is the current temperature?");
 
-condition = prompt("what is the current weather condition? Please enter either sunny, cloudy, raining, snowing or thunder");
+condition = prompt("What is the current weather condition? Please enter either sunny, cloudy, raining, snowing or thunder");
 
-if (condition.toLowerCase !== "sunny" || "raining" || "snowing" || "thunder") {
-  prompt("Sorry that weather condition is not recognised, please enter either sunny, cloudy, raining, snowing or thunder")
+if (condition.toLowerCase === "sunny" || "raining" || "snowing" || "thunder") {
+  condition = prompt("Sorry that weather condition is not recognised, please enter either sunny, cloudy, raining, snowing or thunder")
 }
 
   //when temperature is over 30 the following condition will set the boolean value of goToWork 
   
-  if (temperature > 30){
+if (temperature > 30){
 
        goToWork = false
   
@@ -83,8 +86,6 @@ if (condition.toLowerCase !== "sunny" || "raining" || "snowing" || "thunder") {
 
     //Use goToWork value to display statement whether Kelvin should or shouldnn't go work
 
-
-  // function decision()
   if (goToWork && condition == "raining" && temperature > 20) {
       console.log("Being warm and wet isn't the worst, you can continue working on your new lab today, Kelvin");
   }
@@ -104,4 +105,9 @@ if (condition.toLowerCase !== "sunny" || "raining" || "snowing" || "thunder") {
       console.log("It's not safe to work today, Kelvin");
 
   } 
+}())  
+}
+
+
+while(continuousAnalysis);
 
