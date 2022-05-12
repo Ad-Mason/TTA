@@ -1,10 +1,11 @@
 
 //create variables
 
-var temperature;
-var condition;
-var goToWork;
+var temperature
+var condition
+var goToWork
 
+//ask user to input tmeperature and weather condition
 
 temperature = prompt("what is the current temperature?");
 
@@ -17,8 +18,9 @@ if (condition.toLowerCase !== "sunny" || "raining" || "snowing" || "thunder") {
   //when temperature is over 30 the following condition will set the boolean value of goToWork 
   
   if (temperature > 30){
-      
+
        goToWork = false
+  
     }
 
   //when temperature is over 20 the following condition will set the boolean value of goToWork 
@@ -74,11 +76,15 @@ if (condition.toLowerCase !== "sunny" || "raining" || "snowing" || "thunder") {
     else if (temperature < 10){
 
      goToWork = false
-    }
+     }
+
+  
 
 
     //Use goToWork value to display statement whether Kelvin should or shouldnn't go work
 
+
+  // function decision()
   if (goToWork && condition == "raining" && temperature > 20) {
       console.log("Being warm and wet isn't the worst, you can continue working on your new lab today, Kelvin");
   }
@@ -98,3 +104,4 @@ if (condition.toLowerCase !== "sunny" || "raining" || "snowing" || "thunder") {
       console.log("It's not safe to work today, Kelvin");
 
   } 
+
