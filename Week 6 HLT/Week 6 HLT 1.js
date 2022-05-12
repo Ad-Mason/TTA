@@ -105,6 +105,10 @@ if (temperature > 30){
   } else {
     console.log("Sorry that weather condition is not recognised");
   }
+  
+
+
+
 }())  
 }
 
