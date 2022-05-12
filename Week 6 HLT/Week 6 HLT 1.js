@@ -1,24 +1,26 @@
 
 //create variables
 
-var temperature;
-var condition;
-var goToWork;
+var temperature
+var condition
+var goToWork
+var continuousAnalysis = "true"
 
+do {   (function()  {
 
-temperature = prompt("what is the current temperature?");
+//ask user to input tmeperature and weather condition
 
-condition = prompt("what is the current weather condition? Please enter either sunny, cloudy, raining, snowing or thunder");
+temperature = prompt("What is the current temperature in degrees celsius?");
 
-if (condition.toLowerCase() !== "sunny" || condition.toLowerCase() !== "cloudy" || condition.toLowerCase() !== "raining" || condition.toLowerCase() !== "snowing" || condition.toLowerCase() !== "thunder") {
-  prompt("Sorry that weather condition is not recognised, please enter either sunny, cloudy, raining, snowing or thunder")
-}
+condition = prompt("What is the current weather condition? Please enter either sunny, cloudy, raining, snowing or thunder");
+
 
   //when temperature is over 30 the following condition will set the boolean value of goToWork 
   
-  if (temperature > 30){
-      
+if (temperature > 30){
+
        goToWork = false
+  
     }
 
   //when temperature is over 20 the following condition will set the boolean value of goToWork 
@@ -73,8 +75,11 @@ if (condition.toLowerCase() !== "sunny" || condition.toLowerCase() !== "cloudy" 
 
     else if (temperature < 10){
 
-     goToWork = false
-    }
+     goToWork = false;
+
+     }
+
+  
 
 
     //Use goToWork value to display statement whether Kelvin should or shouldnn't go work
@@ -94,7 +99,15 @@ if (condition.toLowerCase() !== "sunny" || condition.toLowerCase() !== "cloudy" 
   } else if (temperature > 30){
       console.log("It's too hot to work effectively today, Kelvin");
 
-  } else if (condition == "thunder" && temperature > 20) {
+  } else if (condition == "thunder" && temperature > 10) {
       console.log("It's not safe to work today, Kelvin");
 
-  } 
+  } else {
+    console.log("Sorry that weather condition is not recognised");
+  }
+}())  
+}
+
+
+while(continuousAnalysis);
+

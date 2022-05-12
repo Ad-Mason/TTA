@@ -1,14 +1,50 @@
 
+
 //ask user to input 2 values and an operator for a calculation
 
+
+let answer = "";
+
+while (answer.toLowerCase() !== "no"){
+
 let firstValue = prompt("Enter a number")
-let secondValue = prompt("Enter a second number")
-let operation = prompt("Enter operator for calculation (+, -, *, /,^):");
+let operation = prompt("Enter operator for calculation (+, -, *, /,^,sin,cos,tan):");
+let secondValue
+
+switch (operation) {
+    case "+":
+    case "-":
+    case "*":
+    case "/":
+    case "^":
+    secondValue = prompt("Enter another number");
+}
+
+//sin calculation
+function sin(firstValue) { 
+    if (!secondValue){
+    return Math.sin(firstValue);
+    }
+}
+
+//cos calculation
+function cos(firstValue) { 
+    if (!secondValue){
+    return Math.cos(firstValue);
+    }
+}
+
+//tan calculation
+function tan(firstValue) { 
+    if (!secondValue){
+    return Math.tan(firstValue);
+    }
+}
 
 //adding the 2 input values
 
 function addition(firstValue, secondValue) { 
-    return firstValue += secondValue;
+    return firstValue + secondValue;
 }
 //subtracting value 2 from value 1
 
@@ -37,6 +73,16 @@ let result
 //call the function according to the matching operator
 
 switch (operation) {
+
+case "sin" : result = sin(firstValue)
+break;
+
+case "cos" : result = cos(firstValue)
+break;
+
+case "tan" : result = tan(firstValue)
+break;
+
 case "+" : result = addition(firstValue, secondValue)
 break;
 
@@ -54,7 +100,15 @@ case "^" : result = toThePowerOf (firstValue, secondValue)
 
 //log the calculation and result
 
-console.log(`${firstValue} ${operation} ${secondValue} = ${result}`);
+if (firstValue && secondValue) {
+    console.log(`${firstValue} ${operation} ${secondValue} = ${result}`);
+} else {
+    console.log(`${operation} ${firstValue} = ${result}`)
+}
+
+answer = prompt("Would you like to do another calculation?");
+
+}
 
 
 
