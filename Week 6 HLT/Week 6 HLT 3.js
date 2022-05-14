@@ -10,10 +10,8 @@ var letterCount = []
 
 for (let fruit in fruits) {
 
-
     var vowels = 0
     var consonants = 0
-
 
 
     for (var i = 0; i < fruits[fruit].length; i++) {
@@ -31,20 +29,9 @@ for (let fruit in fruits) {
             lettersFound.push(currentLetter)
             letterCount.push(1);
         }
-        // console.log(`====Found : ${found}`)
-        // if (!found) {
-
-        //     lettersFound.push(currentLetter)
-        //     letterCount.push(1)
-        // } else {
-        //     console.log(`==== count: ${letterCount[found]}`)
-        //     letterCount[found] = letterCount + 1
-        // }
 
 
     }
-
-
 
 
     if (vowels < 2 && (fruits[fruit][0].toLowerCase() == "a" || fruits[fruit][0].toLowerCase() == "e" || fruits[fruit][0].toLowerCase() == "i" || fruits[fruit][0].toLowerCase() == "o" || fruits[fruit][0].toLowerCase() == "u")) {
@@ -69,9 +56,6 @@ for (let fruit in fruits) {
     else {
         console.log(`A ${fruits[fruit]} has ${vowels} vowels and ${consonants} consonants`);
     }
-
-
-
 
 }
 
