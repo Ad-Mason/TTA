@@ -1,52 +1,87 @@
 
 
+
 //my fruits array 
 
 var fruits = ["Apple", "Orange", "Banana", "Pear", "Peach", "Strawberry", "Cherry", "Acai"]
-
+var lettersFound = []
+var letterCount = []
 //loop through my fruits array to find the number of vowels and consonants 
 
-for (let fruit in fruits)  {
+for (let fruit in fruits) {
 
 
     var vowels = 0
     var consonants = 0
 
-    for (var i = 0; i < fruits[fruit].length; i++){
-       if (fruits[fruit][i].toLowerCase() == "a" || fruits[fruit][i].toLowerCase() == "e" || fruits[fruit][i].toLowerCase() == "i" || fruits[fruit][i].toLowerCase() == "o" || fruits[fruit][i].toLowerCase() == "u") {
-           vowels ++
-       } else {
-           consonants ++
-       }
+
+
+    for (var i = 0; i < fruits[fruit].length; i++) {
+        var currentLetter = fruits[fruit][i];
+
+        if (currentLetter == "a" || currentLetter == "e" || currentLetter == "i" || currentLetter == "o" || currentLetter == "u") {
+            vowels++
+        } else {
+            consonants++
+        }
+        var letterIdx = lettersFound.findIndex(x=> x ==currentLetter)
+        if (lettersFound.find(element => element == currentLetter)) {
+        letterCount[letterIdx]++;
+        } else {
+            lettersFound.push(currentLetter)
+            letterCount.push(1);
+        }
+        // console.log(`====Found : ${found}`)
+        // if (!found) {
+
+        //     lettersFound.push(currentLetter)
+        //     letterCount.push(1)
+        // } else {
+        //     console.log(`==== count: ${letterCount[found]}`)
+        //     letterCount[found] = letterCount + 1
+        // }
+
 
     }
-    
-    //Output number of vowels and consonants in each fruit beginning with An for fruits starting with a vowel and A for the rest
-    
-    if (vowels < 2 && (fruits[fruit][0].toLowerCase() =="a" || fruits[fruit][0].toLowerCase() == "e" || fruits[fruit][0].toLowerCase() == "i" || fruits[fruit][0].toLowerCase() == "o" || fruits[fruit][0].toLowerCase() == "u")) {
-        console.log(`An ${fruits[fruit]} has ${vowels} vowel and ${consonants} consonants`);
-    } 
-    
-    else if (consonants < 2 && (fruits[fruit][0].toLowerCase() =="a" || fruits[fruit][0].toLowerCase() == "e" || fruits[fruit][0].toLowerCase() == "i" || fruits[fruit][0].toLowerCase() == "o" || fruits[fruit][0].toLowerCase() == "u")) {
-        console.log(`An ${fruits[fruit]} has ${vowels} vowels and ${consonants} consonant`);
-    } 
 
-    else if (fruits[fruit][0].toLowerCase() =="a" || fruits[fruit][0].toLowerCase() == "e" || fruits[fruit][0].toLowerCase() == "i" || fruits[fruit][0].toLowerCase() == "o" || fruits[fruit][0].toLowerCase() == "u") {
+
+
+
+    if (vowels < 2 && (fruits[fruit][0].toLowerCase() == "a" || fruits[fruit][0].toLowerCase() == "e" || fruits[fruit][0].toLowerCase() == "i" || fruits[fruit][0].toLowerCase() == "o" || fruits[fruit][0].toLowerCase() == "u")) {
+        console.log(`An ${fruits[fruit]} has ${vowels} vowel and ${consonants} consonants`);
+    }
+
+    else if (consonants < 2 && (fruits[fruit][0].toLowerCase() == "a" || fruits[fruit][0].toLowerCase() == "e" || fruits[fruit][0].toLowerCase() == "i" || fruits[fruit][0].toLowerCase() == "o" || fruits[fruit][0].toLowerCase() == "u")) {
+        console.log(`An ${fruits[fruit]} has ${vowels} vowels and ${consonants} consonant`);
+    }
+
+    else if (fruits[fruit][0].toLowerCase() == "a" || fruits[fruit][0].toLowerCase() == "e" || fruits[fruit][0].toLowerCase() == "i" || fruits[fruit][0].toLowerCase() == "o" || fruits[fruit][0].toLowerCase() == "u") {
         console.log(`An ${fruits[fruit]} has ${vowels} vowels and ${consonants} consonants`);
-    } 
-    
+    }
+
     else if (vowels < 2) {
         console.log(`A ${fruits[fruit]} has ${vowels} vowel and ${consonants} consonants`);
-    } 
-    
+    }
+
     else if (consonants < 2) {
         console.log(`A ${fruits[fruit]} has ${vowels} vowels and ${consonants} consonant`);
     }
     else {
         console.log(`A ${fruits[fruit]} has ${vowels} vowels and ${consonants} consonants`);
     }
-} 
- 
 
 
- 
+
+
+}
+
+
+console.log("\n\nWe require")
+var orders = ""
+for (i = 0; i < lettersFound.length; i++ ) {
+    if (lettersFound.length == i+1){
+    orders += (`${letterCount[i]} ${lettersFound[i]}. `)
+    } else  orders += (`${letterCount[i]} ${lettersFound[i]}, `)
+}
+
+console.log(orders);

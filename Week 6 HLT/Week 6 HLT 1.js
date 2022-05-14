@@ -99,7 +99,7 @@ if (temperature > 30){
   } else if (temperature > 30){
       console.log("It's too hot to work effectively today, Kelvin");
 
-  } else if (condition == "thunder" && temperature > 10) {
+  } else if (condition == "thunder" && temperature >= 10) {
       console.log("It's not safe to work today, Kelvin");
 
   } else {
