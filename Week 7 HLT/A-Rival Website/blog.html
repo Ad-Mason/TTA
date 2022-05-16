@@ -4,72 +4,56 @@
     <link rel="stylesheet" type="text/css" href="SRC/CSS/style.css" />
     <script src="SRC/JavaScript/index.js"></script>
  </head>
-
+ <button onclick="toggle()">Display Mode</button>
   <body>
     <h1 id="title"><a href="./index.html">A-RIVAL</a></h1>
-
-    <button onclick="toggle()">Toggle dark mode</button>
 
     <header>
 
         <div >
-            <nav class="topnav">
-               <ul class="nav-list">
-               <li><h3><a href="./About.html">About</a></h3></li>
-               <li><h3><a href="./Listen.html">Listen</a></h3></li>
-               <li><h3><a href="./Blog.html">Producer Blog</a></h3></li>
-               <li><h3><a href="./Contact.html">Contact</a></h3></li>
-               </ul>
-            </nav>
+          <nav class="topnav">
+            <ul class="nav-list">
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./Listen.html">Listen</a></li>
+            <li><a href="./Blog.html">Producer Blog</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+         </nav>
       
          </div>
-  
       </header>
 
 
+      <div>
 
-      <div id="myBlog" style="padding:16px;background-color:lightgray">
-        <h3>My Producer Blog</h3>
-      </div>
-        
+       <form>  
 
-
-
-      <div class="Blog">
-
-        <form onsubmit="post_to_blog()">
-  
           <label class="labels" for="Title">Title</label>
-          <input type="text" placeholder="Entre blog title" id="Title" name="Title" class="input" required>
-
+          <input type="text" placeholder="Entre blog title" id="Title" name="Collection1" class="input" required>
           <label class="labels" for="Author">Author</label>
-          <input type="text" placeholder="Enter your name" id="Author" name="Author" class="input" required>
-
+          <input type="text" placeholder="Enter your name" id="Author" name="Collection1" class="input" required>
           <label class="labels" for="Message">Blog Post</label>
-          <textarea placeholder="Please type your post here" id="Post" name="Post" class="textArea"></textarea>
+          <textarea placeholder="Please type your post here" id="Post" name="Collection1" class="textArea"></textarea>
 
+          <button type="button" onclick="submitBlog()" value ="Submit blog">POST</button>
   
-          
-          <br><br>
-  
-          <div class="Button">
-  
-          <input type="submit" value ="Submit blog">
-  
-          </div>
+        
   
   
         </form>
   
+        <br><br>
+
+        <div class="Blog" id="myBlog" style="padding:16px;background-color:lightgray">
+
+          <h3>My Producer Blog</h3>
+  
+        </div>
+
       </div>
 
     <div>
         
-        <form>
-
-
-
-        </form>
 
 
 
@@ -84,3 +68,4 @@
 
   </body>
 </html>
+

@@ -8,16 +8,6 @@ function change_text(){
   }
 }
 
-
-// Create element:
-const para = document.createElement("p");
-para.innerHTML = "This is a paragraph.";
-
-// Append to another element:
-document.getElementById("myBlog").appendChild(para);
-
-
-
 function change_background(){
   if (document.body.style.backgroundColor == "purple") {
     document.body.style.backgroundColor = "#FFFFFF";

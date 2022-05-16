@@ -1,32 +1,24 @@
 
-function toggle() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+  function submitBlog(){
+    
+    var title = document.createElement("h2");
+    var author = document.createElement("h2");
+    var post = document.createElement("p");
+    title.innerText = document.getElementById("Title").value;
+    author.innerText = document.getElementById("Author").value;
+    post.innerText = document.getElementById("Post").value;
+    document.getElementById("myBlog").appendChild(post);
+    document.getElementById("myBlog").appendChild(post);
   }
 
-// Create element:
-const para = document.createElement("p");
-para.innerHTML = "This is a paragraph.";
 
-// Append to another element:
-document.getElementById("myBlog").appendChild(para);
-
-
-function post_to_blog(){
-const title = document.createElement("t");
-const author = document.createElement("a");
-const post = document.createElement("p");
-
-//append to the dom
-const content = document.querySelector(".content");
-content.appendChild(author)
-
-//appened to the body
-title.innerText = "Blog title";
-author.innerText = "Author name";
-post.innerText = "Blog Post";
-para.innerText = "This is a paragraph";
-document.body.appendChild(para);
+function toggle() {
+    var elementB = document.body;
+    elementB.classList.toggle("light-mode");
+    var elementM = document.main;
+    elementM.classList.toggle("light-mode");
+  }
 
 
-} 
+
+  
