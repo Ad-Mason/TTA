@@ -93,6 +93,8 @@ switch(condition.toLowerCase()){
       message = 2;
     }
     break;
+    default:
+    console.log("That weather condition is not recognised");
 }
 
 
@@ -119,8 +121,7 @@ switch(message){
   break;
   case 7:
     console.log("No one likes being wet and cold, Kelvin");
-  default:
-    return "That weather condition is not recognised";
+
 }
 
 }())

@@ -4,18 +4,13 @@ function toggle() {
     element.classList.toggle("dark-mode");
   }
 
+// Create element:
+const para = document.createElement("p");
+para.innerHTML = "This is a paragraph.";
 
-// function submit_form(){
-//     let Name = document.getElementById("Name");
-//     let Email = document.getElementById("Email");
-//     let Message = document.getElementById("Message");
-// }
+// Append to another element:
+document.getElementById("myBlog").appendChild(para);
 
-
-function submit_blog(){
-    let Name = document.getElementById("Name");
-    let Message = document.getElementById("Message");
-}
 
 function post_to_blog(){
 const title = document.createElement("t");
