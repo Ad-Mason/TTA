@@ -1,15 +1,16 @@
 
-  function submitBlog(){
+function submitBlog(){
     
-    var title = document.createElement("h2");
-    var author = document.createElement("h2");
-    var post = document.createElement("p");
-    title.innerText = document.getElementById("Title").value;
-    author.innerText = document.getElementById("Author").value;
-    post.innerText = document.getElementById("Post").value;
-    document.getElementById("myBlog").appendChild(post);
-    document.getElementById("myBlog").appendChild(post);
-  }
+  var title = document.createElement("h2");
+  var author = document.createElement("h2");
+  var post = document.createElement("p");
+  title.innerText = document.getElementById("Title").value;
+  author.innerText = document.getElementById("Author").value;
+  post.innerText = document.getElementById("Post").value;
+  document.getElementById("myBlog").appendChild(title);
+  document.getElementById("myBlog").appendChild(author);
+  document.getElementById("myBlog").appendChild(post);
+}
 
 
 function toggle() {
