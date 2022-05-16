@@ -20,7 +20,7 @@ function submit_blog(){
 function post_to_blog(){
 const title = document.createElement("t");
 const author = document.createElement("a");
-const para = document.createElement("p");
+const post = document.createElement("p");
 
 //append to the dom
 const content = document.querySelector(".content");
@@ -29,6 +29,7 @@ content.appendChild(author)
 //appened to the body
 title.innerText = "Blog title";
 author.innerText = "Author name";
+post.innerText = "Blog Post";
 para.innerText = "This is a paragraph";
 document.body.appendChild(para);
 
