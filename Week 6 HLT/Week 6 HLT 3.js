@@ -62,10 +62,11 @@ for (let fruit in fruits) {
 
 console.log("\n\nWe require")
 var orders = ""
-for (i = 0; i < lettersFound.length; i++ ) {
-    if (lettersFound.length == i+1){
+for (i = 0; i < lettersFound.length; i++) {
+
     orders += (`${letterCount[i]} ${lettersFound[i]}. `)
-    } else  orders += (`${letterCount[i]} ${lettersFound[i]}, `)
+    if (lettersFound.length == i+1){
+} else  orders += (`${letterCount[i]} ${lettersFound[i]}, `)
 }
 
 console.log(orders);

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bringing It All together</title>
+
+    <script src="JavaScript/index.js"></script>
+
+  </head>
+  <body>
+    <h1>HTML, CSS, and JS - Bringing It All Together</h1>
+    <p id="paragraph_1"> Click buttons below to change the website</p>
+    <button type="submit" onclick="change_text()">Change Text</button>
+    <button type="submit" onclick="change_background()">Change Background</button>
+
+    <br><br><br>
+
+    <form onsubmit="submit_form()">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname"><br><br>
+      <label for="sname">Surname</label>
+      <input type="text" id="sname"><br><br>
+      <label for="email">Email</label>
+      <input type="text" id="email"><br><br>
+
+      <p>Contact Method:</p>
+      <label for="radio_1">Phone</label>
+      <input type="radio" id="radio_1" name="collection_1" value="Phone"><br>
+      <label for="radio_2">SMS</label>
+      <input type="radio" id="radio_2" name="collection_1" value="SMS"><br>
+      <label for="radio_3">Email</label>
+      <input type="radio" id="radio_3" name="collection_1" value="Email" checked>
+
+
+      <br><br><input type="submit" value="Submit Form">
+
+    </form>
+
+  </body>
+</html>
