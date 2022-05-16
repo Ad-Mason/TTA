@@ -47,13 +47,11 @@ body {
   
   h1 {
     font-size: 36px;
-    /* padding: 5px; */
     color: #e9e504;
     font-family:poppins-semibold,poppins,sans-serif;
     letter-spacing:-0.02em;
     font-size:65px;
     font-weight:bold;
-    /* background-color: black; */
     text-align: center;
   }
   
@@ -115,20 +113,6 @@ body {
     letter-spacing: 1px;
   }
   
-  th {
-    border: 2px solid#000000;
-  }
-  
-  table {
-    text-align: center;
-    margin: 20px auto;
-  }
-  
-  td {
-    font-family:poppins-semibold,poppins,sans-serif;
-    border: 2px solid #ffffff;
-    width: 300px;
-  }
 
   a:link {
     color:  #b3b149;
@@ -161,13 +145,13 @@ body {
     position: fixed;
     width: 100%;
     bottom: 5px;
-    /* background-color:#c0c0c0; */
     z-index: 5;
   }
+  
   footer h3 {
     display: inline-block;
     font-size: 14px;
-    /* background-color:#c0c0c0; */
+
   }
   
   .container {
