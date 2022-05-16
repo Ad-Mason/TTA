@@ -6,6 +6,7 @@
 var fruits = ["Apple", "Orange", "Banana", "Pear", "Peach", "Strawberry", "Cherry", "Acai"]
 var lettersFound = []
 var letterCount = []
+
 //loop through my fruits array to find the number of vowels and consonants 
 
 for (let fruit in fruits) {
@@ -22,10 +23,17 @@ for (let fruit in fruits) {
         } else {
             consonants++
         }
+
+        //if current letter is in letters found add 1 to index
+
         var letterIdx = lettersFound.findIndex(x=> x ==currentLetter)
         if (lettersFound.find(element => element == currentLetter)) {
         letterCount[letterIdx]++;
-        } else {
+        } 
+        
+        //if current letter is not found push onto arry
+
+        else {
             lettersFound.push(currentLetter)
             letterCount.push(1);
         }
